@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Ranke 360°</title>
+<style>
+    /* Seu CSS do Streamlit convertido para CSS padrão */
+    body, h1, h2, h3, p, a, span, label, button, li, td, th, div {
+        color: #ffffff;
+        font-family: 'Montserrat', sans-serif;
+        background-color: #0D47A1;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+    img.logo {
+        display: block;
+        margin: 25px auto 25px;
+        width: 140px;
+        height: 140px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+    h1 {
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+    h2.subtitle, p.description {
+        font-weight: 500;
+        margin-bottom: 30px;
+    }
+    p.description {
+        font-size: 0.9rem;
+        line-height: 1.5;
+        margin-bottom: 1.5rem;
+    }
+    a.link-button {
+        display: block;
+        background-color: #0D47A1;
+        color: white;
+        padding: 14px 0;
+        margin: 12px auto;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 1.1rem;
+        width: 200px;
+        box-shadow: 0 3px 8px rgba(13,71,161,0.25);
+        transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    }
+    a.link-button:hover {
+        background-color: #1565C0;
+        box-shadow: 0 5px 15px rgba(21,101,192,0.5);
+    }
+    .tabs {
+        max-width: 600px;
+        margin: 0 auto 40px;
+    }
+    .tab-buttons {
+        display: flex;
+        justify-content: center;
+        border-bottom: 3px solid transparent;
+        margin-bottom: 20px;
+        overflow-x: auto;
+    }
+    .tab-buttons button {
+        background: transparent;
+        border: none;
+        border-bottom: 3px solid transparent;
+        color: white;
+        font-size: 1rem;
+        font-weight: 500;
+        padding: 10px 20px;
+        margin-right: 20px;
+        cursor: pointer;
+        white-space: nowrap;
+        transition: border-color 0.3s ease, color 0.3s ease;
+    }
+    .tab-buttons button:last-child {
+        margin-right: 0;
+    }
+    .tab-buttons button:hover {
+        border-bottom: 3px solid #bbbbbb;
+        color: #bbbbbb;
+    }
+    .tab-buttons button.active {
+        border-bottom: 3px solid #ffffff;
+        font-weight: 700;
+        color: #ffffff;
+    }
+    .tab-content {
+        font-size: 1rem;
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        color: white;
+    }
+    iframe {
+        border: 0;
+        border-radius: 12px;
+        max-width: 100%;
+        height: 315px;
+        margin-bottom: 30px;
+    }
+    h3 {
+        margin-top: 1.8rem;
+        margin-bottom: 1rem;
+        font-weight: 600;
+    }
+</style>
+</head>
+<body>
+
+<img src="https://lh3.googleusercontent.com/p/AF1QipNWXxW-WReAzeTIx8cX2HsuXkC_PII7f-Ff6KTa=w408-h408-k-no" alt="Ranke 360 Logo" class="logo" />
+
+<p class="description">Visibilidade Estratégica para Negócios</p>
+<p class="description">DESTAQUE | POSICIONAMENTO | CLIENTES</p>
+
+<div>
+    <a href="https://www.instagram.com/ranke360" target="_blank" class="link-button" rel="noopener noreferrer">Instagram</a>
+    <a href="https://www.youtube.com/@Ranke360" target="_blank" class="link-button" rel="noopener noreferrer">YouTube</a>
+    <a href="https://wa.me/5588988385551" target="_blank" class="link-button" rel="noopener noreferrer">WhatsApp</a>
+    <a href="https://maps.app.goo.gl/pp57LioX2Uecsfwj6" target="_blank" class="link-button" rel="noopener noreferrer">Google Maps</a>
+    <a href="https://ranke360.streamlit.app" target="_blank" class="link-button" rel="noopener noreferrer">Blog Ranke 360°</a>
+</div>
+
+<div class="tabs">
+    <div class="tab-buttons" role="tablist">
+        <button class="active" role="tab" aria-selected="true" aria-controls="tab-img360" id="btn-img360" onclick="showTab('img360')">IMAGEM 360°</button>
+        <button role="tab" aria-selected="false" aria-controls="tab-tour" id="btn-tour" onclick="showTab('tour')">TOUR VIRTUAL</button>
+        <button role="tab" aria-selected="false" aria-controls="tab-video" id="btn-video" onclick="showTab('video')">VÍDEO IMERSIVO</button>
+        <button role="tab" aria-selected="false" aria-controls="tab-mapa" id="btn-mapa" onclick="showTab('mapa')">MAPA</button>
+        <button role="tab" aria-selected="false" aria-controls="tab-exclusivo" id="btn-exclusivo" onclick="showTab('exclusivo')">360° EXCLUSIVO</button>
+    </div>
+
+    <div id="tab-img360" class="tab-content" role="tabpanel" aria-labelledby="btn-img360">
+        <h3>Pitinininha Kids | Roupa infantil | Brejo Santo-CE</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!4v1753151196062!6m8!1m7!1sCAoSHENJQUJJaEI4OUxua0JvT1VoaklzY09CaWVUdEg.!2m2!1d-7.493140408761639!2d-38.98694109336261!3f297.8543782167756!4f-10.166367931658101!5f0.7820865974627469" loading="lazy"></iframe>
+
+        <h3>Next Level | Academia | Cajazeiras - PB</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!4v1753180786706!6m8!1m7!1sCAoSHENJQUJJaEFxQUtEOWxMaEdRekpiYk5SbGEzeGc.!2m2!1d-6.887891776224389!2d-38.55972383357095!3f1.520990456891578!4f-30.982226239046547!5f0.4000000000000002" loading="lazy"></iframe>
+
+        <h3>Next Level | Academia | Brejo Santo-CE</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!4v1753151300722!6m8!1m7!1sCAoSHENJQUJJaENabnYta1NIYnk3U0VTZXg2cVZFSUQ.!2m2!1d-7.486728599999999!2d-38.9976357!3f14.212028543852037!4f-10.245711121253734!5f0.7820865974627469" loading="lazy"></iframe>
+
+        <h3>Ginásio Poliesportivo Welingtão | Brejo Santo-CE</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!4v1753150938298!6m8!1m7!1sCAoSHENJQUJJaEQwY09MVkRONG5ic1VnamQtTkw0SV8.!2m2!1d-7.489376802708099!2d-38.9901219288986!3f190.74911673396883!4f3.1483665025552057!5f0.7820865974627469" loading="lazy"></iframe>
+
+        <h3>Bar Caldeira do Inferno | Brejo Santo-CE</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!4v1753231196225!6m8!1m7!1sCAoSHENJQUJJaEQxcnI1cGMyTWlqQ3Z5NUxiV2tpZlY.!2m2!1d-7.492859299999999!2d-38.98546!3f157.1298482595132!4f-34.00956372051077!5f0.7820865974627469" loading="lazy"></iframe>
+
+        <h3>Pista Pública de Skate | Brejo Santo-CE</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!4v1753231252386!6m8!1m7!1sCAoSHENJQUJJaEJodGhOaDNiWTg4MDIwYWVFQzdqXzg.!2m2!1d-7.48501101224435!2d-38.98611708745776!3f8.388327367476812!4f-13.107200825728412!5f0.4000000000000002" loading="lazy"></iframe>
+
+        <h3>Quadra de Basquete | Brejo Santo-CE</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!4v1753150711289!6m8!1m7!1sCAoSHENJQUJJaERnaG1mQmpPOEpHZk9LYnNWUmlQaXM.!2m2!1d-7.484971799999999!2d-38.9860056!3f195.21!4f-0.5600000000000023!5f0.4000000000000002" loading="lazy"></iframe>
+
+        <h3>CineTeatro Municipal Professor Júlio Macedo Costa | Brejo Santo-CE</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!4v1753310567315!6m8!1m7!1sCAoSHENJQUJJaEJpelU0dGRScTVzY3hGQXVwaDNCTkc.!2m2!1d-7.491297399999999!2d-38.9761639!3f357.427296679104!4f-4.339601456811053!5f0.4000000000000002" loading="lazy"></iframe>
+    </div>
+
+    <div id="tab-tour" class="tab-content" role="tabpanel" aria-labelledby="btn-tour" style="display:none;">
+        <h3>BFX Consultoria | Contabilidade | Brejo Santo-CE</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!4v1753197635440!6m8!1m7!1sCAoSHENJQUJJaEQtVk8yb1hxaHppRUVVdWxWQnZqMmU.!2m2!1d-7.490032784172747!2d-38.97943065124561!3f192.59282718210963!4f11.423489168813845!5f0.7820865974627469" loading="lazy"></iframe>
+
+        <h3>Museu Municipal Historiadora Marineusa Santana Basílio Leite | Brejo Santo-CE</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!4v1753231442306!6m8!1m7!1sCAoSHENJQUJJaEFMV2tRTUxYT1VIdEdnMmNwbzltYzk.!2m2!1d-7.488856276863652!2d-38.98997716077863!3f5.084682959484297!4f1.5985458206393588!5f0.4000000000000002" loading="lazy"></iframe>
+    </div>
+
+    <div id="tab-video" class="tab-content" role="tabpanel" aria-labelledby="btn-video" style="display:none;">
+        <h3>Pitinininha Kids | A Melhor Loja de Roupas Infantis de Brejo Santo-CE</h3>
+        <iframe src="https://www.youtube.com/embed/Ur5kwNnWq8A?si=Ci_G4SkarslpgfsW" allowfullscreen></iframe>
+
+        <h3>Next Level | Cajazeiras-PB | A Academia Mais Moderna de Cajazeiras-PB</h3>
+        <iframe src="https://www.youtube.com/embed/lwStG-fQeok?si=OF8M5ZwyK8gsjplq" allowfullscreen></iframe>
+
+        <h3>Skate Radical no Sol Escaldante: Vídeo Imersivo 360° com Ítalo Gomes | Ranke 360</h3>
+        <iframe src="https://www.youtube.com/embed/_wlmH5ync08?si=3Wo3AZumCWlpblW_" allowfullscreen></iframe>
+
+        <h3>Circuito Ecosport em Brejo Santo-CE: Motocross Insano | Ranke 360°</h3>
+        <iframe src="https://www.youtube.com/embed/lKrutwPQ3GM" allowfullscreen></iframe>
+    </div>
+
+    <div id="tab-mapa" class="tab-content" role="tabpanel" aria-labelledby="btn-mapa" style="display:none;">
+        <!-- Conteúdo da aba MAPA - insira seu conteúdo aqui -->
+        <p>Conteúdo do mapa será adicionado aqui.</p>
+    </div>
+
+    <div id="tab-exclusivo" class="tab-content" role="tabpanel" aria-labelledby="btn-exclusivo" style="display:none;">
+        <!-- Conteúdo da aba 360° EXCLUSIVO - insira seu conteúdo aqui -->
+        <p>Conteúdo exclusivo será adicionado aqui.</p>
+    </div>
+</div>
+
+<script>
+    function showTab(tabId) {
+        const tabs = ['img360', 'tour', 'video', 'mapa', 'exclusivo'];
+        tabs.forEach(id => {
+            document.getElementById('tab-' + id).style.display = (id === tabId) ? 'block' : 'none';
+            const btn = document.getElementById('btn-' + id);
+            if (id === tabId) {
+                btn.classList.add('active');
+                btn.setAttribute('aria-selected', 'true');
+            } else {
+                btn.classList.remove('active');
+                btn.setAttribute('aria-selected', 'false');
+            }
+        });
+    }
+</script>
+
+</body>
+</html>
